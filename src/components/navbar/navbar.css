@@ -1,0 +1,39 @@
+.nav {
+  background-color: var(--gray-20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 30;
+  padding: 30px;
+}
+
+.desk-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.text-active {
+  color: var(--primary-500);
+}
+
+.link:hover {
+  color: var(--primary-300);
+  transition: 500ms;
+  cursor: pointer;
+}
