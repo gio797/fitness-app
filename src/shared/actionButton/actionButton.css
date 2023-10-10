@@ -1,0 +1,7 @@
+.action-button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: var(--secondary-500);
+  color: var(--gray-500);
+  text-decoration: none;
+}
