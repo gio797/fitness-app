@@ -1,21 +1,69 @@
-.home {
-  margin-top: 60px;
-  padding-inline: 20px;
+.section {
+  margin-top: 80px;
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.title {
+  padding-inline: 20px;
 }
 
 .flex {
   display: flex;
-  align-items: center;
+
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.flex > * {
-  flex: 1;
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .padding-wide-screen {
   padding-inline: 100px;
+}
+
+.img-wrapper {
+  position: relative;
+  z-index: 20;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.right-section {
+  z-index: 20;
+}
+
+.sponsors {
+  background-color: var(--primary-100);
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 1060px) {
+  .section {
+    height: calc(100vh - 200px) !important;
+    margin-top: 200px;
+  }
+  .img-wrapper::before {
+    position: absolute;
+    content: url("../../assets/EvolveText.png");
+    top: -80px;
+    left: -80px;
+    z-index: -1;
+  }
 }
