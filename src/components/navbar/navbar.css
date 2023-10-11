@@ -33,6 +33,7 @@
 
 .text-active {
   color: var(--primary-500);
+  background-color: blue;
 }
 
 .mobile-menu-open-btn {
