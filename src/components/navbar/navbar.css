@@ -35,17 +35,6 @@
   color: var(--primary-500);
 }
 
-.link {
-  text-decoration: none;
-  color: var(--gray-500);
-}
-
-.link:hover {
-  color: var(--primary-300);
-  transition: 500ms;
-  cursor: pointer;
-}
-
 .mobile-menu-open-btn {
   display: flex;
   align-items: center;
@@ -92,4 +81,8 @@
 
 .nav-not-top {
   background-color: var(--primary-100);
+}
+
+.padding-wide-screen {
+  padding-inline: 100px;
 }

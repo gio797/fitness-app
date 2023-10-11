@@ -15,6 +15,10 @@ body {
   background-color: var(--gray-20);
 }
 
+img {
+  max-width: 100%;
+}
+
 :root {
   /* colors */
   --main-bg-color: #000080;
@@ -32,4 +36,15 @@ body {
 
 .app {
   background-color: var(--gray-20);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--gray-500);
+}
+
+.link:hover {
+  color: var(--primary-300);
+  transition: 500ms;
+  cursor: pointer;
 }

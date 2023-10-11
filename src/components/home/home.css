@@ -1,0 +1,21 @@
+.home {
+  margin-top: 60px;
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex > * {
+  flex: 1;
+}
+
+.padding-wide-screen {
+  padding-inline: 100px;
+}

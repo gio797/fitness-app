@@ -20,7 +20,11 @@ function Navbar({ isTopOfPage, selectedPage, setSelectedPage }: Props) {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
 
   return (
-    <nav className={`nav ${!isTopOfPage && "nav-not-top"}`}>
+    <nav
+      className={`nav ${!isTopOfPage && "nav-not-top"} ${
+        isAboveMediumScreen && "padding-wide-screen"
+      }`}
+    >
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
