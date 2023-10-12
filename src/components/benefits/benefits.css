@@ -12,11 +12,51 @@
   gap: 10px;
 }
 
+.benefits-graphics {
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
+}
+
+.benefits-graphics-title {
+  position: relative;
+  z-index: 30;
+}
+
+.benefits-graphics-title span {
+  color: var(--primary-500);
+}
+
+.benefits-graphics-title::before {
+  position: absolute;
+  content: url(../../assets/AbstractWaves.png);
+  top: -60px;
+  left: -60px;
+  z-index: -1;
+}
+
+.benefits-graphics-btn-wrapper {
+  margin-top: 50px;
+  position: relative;
+  z-index: 30;
+}
+
+.benefits-graphics-btn-wrapper::before {
+  position: absolute;
+  content: url(../../assets/Sparkles.png);
+  bottom: -50px;
+  right: 50px;
+  z-index: -1;
+}
+
 @media screen and (min-width: 1060px) {
   .benefits-grid {
     grid-template-columns: repeat(3, 1fr);
   }
   .benefits-desc {
     width: 60%;
+  }
+  .benefits-graphics {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
