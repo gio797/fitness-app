@@ -56,8 +56,8 @@
 
 @media screen and (min-width: 1060px) {
   .section {
-    height: calc(100vh - 200px) !important;
-    margin-top: 200px;
+    height: calc(100vh - 210px) !important;
+    margin-top: 210px;
   }
   .img-wrapper::before {
     position: absolute;
