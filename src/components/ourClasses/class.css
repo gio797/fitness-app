@@ -1,0 +1,28 @@
+.class {
+  position: relative;
+  display: inline-block;
+  height: 380px;
+  width: 450px;
+}
+
+.class-overlay {
+  padding: 20px;
+  position: absolute;
+  z-index: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+  width: 450px;
+  white-space: normal;
+  background-color: var(--primary-500);
+  text-align: center;
+  opacity: 0;
+  color: white;
+}
+
+.class-overlay:hover {
+  opacity: 0.9;
+  transition: 500ms;
+}
