@@ -7,6 +7,7 @@
 }
 
 .gallery {
+  margin-block: 30px;
   height: 353px;
   width: 100%;
   overflow-x: auto;
@@ -14,6 +15,13 @@
 }
 
 .gallery-ul {
-  width: 2800px;
+  width: 2700px;
   white-space: nowrap;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 1060px) {
+  .ourClasses-header {
+    width: 60%;
+  }
 }

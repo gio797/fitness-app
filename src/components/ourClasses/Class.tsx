@@ -9,13 +9,11 @@ type Props = {
 function Class({ name, description, image }: Props) {
   return (
     <li className="class">
-      <div>
-        <div className="class-overlay">
-          <p>{name}</p>
-          <p>{description}</p>
-        </div>
-        <img src={image} alt={image} />
+      <div className="class-overlay">
+        <p>{name}</p>
+        <p>{description}</p>
       </div>
+      <img src={image} alt={image} />
     </li>
   );
 }
