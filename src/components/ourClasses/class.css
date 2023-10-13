@@ -13,7 +13,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 380px;
+
+  height: 340px;
   width: 450px;
   white-space: normal;
   background-color: var(--primary-500);
@@ -25,4 +26,8 @@
 .class-overlay:hover {
   opacity: 0.9;
   transition: 500ms;
+}
+
+.class-overlay-name {
+  font-size: 20px;
 }

@@ -1,0 +1,85 @@
+.contactUs {
+  padding: 20px;
+}
+
+.contactUs-wide-screen {
+  padding: 20px 100px;
+}
+
+.contactUs-header span {
+  color: var(--primary-500);
+}
+
+.form-wrapper {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+form input,
+form textarea {
+  font-size: 15px;
+  font-family: inherit;
+  background-color: var(--primary-300);
+  border-radius: 5px;
+  border: none;
+  padding: 8px 16px;
+  color: var(--gray-500);
+}
+
+form textarea {
+  resize: none;
+}
+
+form button {
+  background-color: var(--secondary-500);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: inherit;
+  width: fit-content;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+form button:hover {
+  color: white;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.contactUs-image-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 30;
+}
+
+.contactUs-image-wrapper img {
+  width: 100%;
+}
+@media screen and (min-width: 1060px) {
+  .form-wrapper {
+    flex-direction: row;
+  }
+
+  .contactUs-text {
+    width: 60%;
+  }
+
+  .contactUs-image-wrapper::before {
+    position: absolute;
+    content: url("../../assets/EvolveText.png");
+    z-index: -1;
+    bottom: -20px;
+    right: 300px;
+  }
+}

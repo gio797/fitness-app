@@ -10,8 +10,8 @@ function Class({ name, description, image }: Props) {
   return (
     <li className="class">
       <div className="class-overlay">
-        <p>{name}</p>
-        <p>{description}</p>
+        <p className="class-overlay-name">{name}</p>
+        <p className="class-overlay-text">{description}</p>
       </div>
       <img src={image} alt={image} />
     </li>
