@@ -1,13 +1,9 @@
 import useMediaQuery from "../../hooks/useMediaQuery";
-import { SelectedPage } from "../../shared/type";
+
 import "./footer.css";
 import Logo from "../../assets/Logo.png";
 
-type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
-};
-
-function Footer({ setSelectedPage }: Props) {
+function Footer() {
   const isAboveMediumScreen = useMediaQuery("(min-width:1060px");
   return (
     <section
