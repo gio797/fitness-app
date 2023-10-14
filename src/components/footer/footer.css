@@ -1,0 +1,24 @@
+.footer-section {
+  padding: 20px;
+  background-color: var(--primary-100);
+}
+
+.footer-section-wide-screen {
+  padding: 20px 100px;
+  background-color: var(--primary-100);
+}
+
+.footer h4 {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1060px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer > * {
+    max-width: 350px;
+  }
+}
